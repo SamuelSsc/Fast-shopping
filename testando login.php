@@ -10,7 +10,7 @@
 					</button>
 				}
 				<?	
-				else{	
+				else {	
 					?> 
 					<button type="button" class="btnLog btn-light mt-3 mr-2">
 						<?php
