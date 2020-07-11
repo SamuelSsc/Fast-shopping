@@ -1,13 +1,8 @@
-
-.btnLog{
-	float:right;
-	border-radius: 5px ;
-	
+.menu{
+	display:flex;
+	justify-content: space-around;
+	background-color: #46b7bf;
 }
-.form-inline{
-	margin-left: 40%;
-	margin-top: -5%;
-}
-.Msgemail{
-	color: white;
+.menu button{
+	height: max-content;
 }

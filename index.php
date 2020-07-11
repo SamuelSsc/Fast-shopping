@@ -19,6 +19,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<link rel="sortcut icon" href="img/favicon.png" type="image/png" />
 	<link rel="stylesheet" href="bootstrap/4.1.3/css/bootstrap.min.css">
@@ -26,12 +27,10 @@
 	<script type="text/javascript" src="jQuery/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="JS/menu.js"></script>
 	<script src="bootstrap/4.1.3/js/bootstrap.bundle.js"></script>
+
 </head>
-
-
-
 <body>
-	<div class="container-fluid">
+	<div class="container-fluid" style=" padding: 0">
 
 		<!--<div class="row justify-content-beetween">
 			<div class="col-sm-4">
@@ -45,47 +44,45 @@
 
 
 		<!--CABEÇALHO-->
-		<nav class="navbar-expand-lg navbar-dark" style="background-color: #46b7bf">
+		<nav class="menu" >
 
 			<a class="navbar-brand" href="#">
 				<img src="img/S.png" alt="logo" class="img-fluid">
-				<h5 class="nomo_loja ml-3 mb-0">Fast Shopping</h5>					
+				<h5 class="nomo_loja ">Fast Shopping</h5>					
 			</a>
 			
 
-			
-			<!--botao de Sair -->
-			<button type="button" class="btnLog btn-light mt-3 mr-2">
-				<?php
-					//$_SESSION ['id_usuario'] = false;
-				?>
-				<style type="text/css">
-					a:link{
-						text-decoration: none;
-					}
-				</style>
-				<a href="index.php">Sair</a>
-			</button>
 
-			<!--botao de Login-->
-			<button type="button" class="btnLog btn-light mt-3 mr-2" >
-				<a href="html/login.php"> 
-					<?php
-						echo "Login";
-					?>
-				</a>
-			</button>
 			
-			<!-- mensagem com o email-->
-			<div class="Msgemail">
-			<?php echo $estado?>
-			</div>
+			<!-- mensagem com o email 
+				<div class="Msgemail">
+				<?php echo $estado?>
+					</div>
 
-			<form class="form-inline ">
-    			<input class="form-control mr-sm-2" type="search" placeholder="Pesquisar produto" aria-label="Pesquisar">
-   				<button class="btn btn-btn-light my-2 my-sm-0" type="submit">Pesquisar</button>
+		-->
+			
+			<form class="form">
+    			<input type="search" placeholder="Pesquisar produto" aria-label="Pesquisar">
+   				<button type="submit">Pesquisar</button>
   			</form>
-			
+			<div>			
+				<!--botao de Sair -->
+				<button type="button" >
+					<?php
+						//$_SESSION ['id_usuario'] = false;
+					?>
+					<a href="index.php">Sair</a>
+				</button>
+
+				<!--botao de Login-->
+				<button type="button" >
+					<a href="html/login.php"> 
+						<?php
+							echo "Login";
+						?>
+					</a>
+				</button>
+			</div>
 			<!--botao de pesquisar
 			<nav class="navbar navbar-dark" style="background-color: #46b7bf">
   				<form class="form-inline mx-auto">
@@ -95,7 +92,7 @@
 			</nav>-->
 
 			<!--botao dos menu-->
-    		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSite">
+    		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
       			<span class="navbar-toggler-icon"></span>
     		</button>
   		
